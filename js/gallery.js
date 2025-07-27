@@ -65,7 +65,6 @@ const images = [
 ];
 
 const gallery = document.querySelector('.gallery');
-console.log(gallery);
 gallery.insertAdjacentHTML('beforeend', createMarkup(images));
 gallery.addEventListener('click', handleClick);
 
@@ -93,9 +92,8 @@ function handleClick(event) {
   if (!event.target.classList.contains('gallery-image')) {
     return;
   }
-  console.log(event.target.dataset.source);
   const instance = basicLightbox.create(`
-    <img src="${event.target.dataset.source}" width="1112" height="640">
+    <img src="${event.target.dataset.source}">
 `);
 
   instance.show();

@@ -43,4 +43,16 @@ img {
   height: 100%;
   object-fit: cover;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 8px;
+}
+
+.basicLightbox__placeholder {
+  background-color: rgba(46, 47, 66, 0.8);
+}
+
+.basicLightbox__placeholder > img:first-child:last-child {
+  width: 1112px;
+  max-height: 640px;
+  object-fit: cover;
+  border-radius: 8px;
 }
